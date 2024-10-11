@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true
+  },
+  "projects": {
+    "passkit": {
+      "type": "library",
+      "root": "libs/passkit",
+      "entryFile": "index",
+      "sourceRoot": "libs/passkit/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/passkit/tsconfig.lib.json"
+      }
+    }
+  }
+}
